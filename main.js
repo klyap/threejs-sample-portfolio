@@ -43,7 +43,7 @@ const spaceTexture = new THREE.TextureLoader().load('/galaxy.jpg');
 scene.background = spaceTexture;
 
 // Cube
-const cubeTexture = new THREE.TextureLoader().load('/galaxy.jpg');
+const cubeTexture = new THREE.TextureLoader().load('/public/galaxy.jpg');
 const cubeGeometry = new THREE.BoxGeometry(5, 5, 5);
 const cubeMaterial = new THREE.MeshBasicMaterial({ map: cubeTexture});
 const cube = new THREE.Mesh(cubeGeometry, cubeMaterial);
@@ -55,8 +55,8 @@ scene.add(cube);
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32, 32),
   new THREE.MeshStandardMaterial({
-    map: new THREE.TextureLoader().load('/moon_texture.jpeg'),
-    normalMap: new THREE.TextureLoader().load('/moon_normal_map.jpeg')
+    map: new THREE.TextureLoader().load('/public/moon_texture.jpeg'),
+    normalMap: new THREE.TextureLoader().load('/public/moon_normal_map.jpeg')
 
   })
 );
